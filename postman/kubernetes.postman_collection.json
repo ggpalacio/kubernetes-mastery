@@ -1,0 +1,414 @@
+{
+	"info": {
+		"_postman_id": "fd92aea0-4bf5-4034-ba60-a2e3a8859e74",
+		"name": "Kubernetes Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16243484"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "Nodes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/nodes",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"nodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Config Maps",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/configmaps",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"configmaps"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Endpoints",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/endpoints",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"endpoints"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Namespaces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/namespaces",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"namespaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/events",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Persistent Volume Claims",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/persistentvolumeclaims",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"persistentvolumeclaims"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Persistent Volumes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/persistentvolumes",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"persistentvolumes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/pods",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"pods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Replication Controllers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/replicationcontrollers",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"replicationcontrollers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service Accounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/serviceaccounts",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"serviceaccounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Services",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/services",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Secrets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{v1-host}}/secrets",
+							"host": [
+								"{{v1-host}}"
+							],
+							"path": [
+								"secrets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "apps/v1",
+			"item": [
+				{
+					"name": "Daemon Sets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apps-v1-host}}/daemonsets",
+							"host": [
+								"{{apps-v1-host}}"
+							],
+							"path": [
+								"daemonsets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deployments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apps-v1-host}}/deployments",
+							"host": [
+								"{{apps-v1-host}}"
+							],
+							"path": [
+								"deployments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Replica Sets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apps-v1-host}}/replicasets",
+							"host": [
+								"{{apps-v1-host}}"
+							],
+							"path": [
+								"replicasets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stateful Sets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apps-v1-host}}/statefulsets",
+							"host": [
+								"{{apps-v1-host}}"
+							],
+							"path": [
+								"statefulsets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "autoscaling/v2",
+			"item": [
+				{
+					"name": "Horizontal Pod Autoscalers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{autoscaling-v2-host}}/horizontalpodautoscalers",
+							"host": [
+								"{{autoscaling-v2-host}}"
+							],
+							"path": [
+								"horizontalpodautoscalers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "batch/v1",
+			"item": [
+				{
+					"name": "Cron Jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{batch-v1-host}}/cronjobs",
+							"host": [
+								"{{batch-v1-host}}"
+							],
+							"path": [
+								"cronjobs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "networking.k8s.io/v1",
+			"item": [
+				{
+					"name": "Ingresses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{networking.k8s.io-v1-host}}/ingresses",
+							"host": [
+								"{{networking.k8s.io-v1-host}}"
+							],
+							"path": [
+								"ingresses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "storage.k8s.io/v1",
+			"item": [
+				{
+					"name": "Storage Classes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{storage.k8s.io-v1-host}}/storageclasses",
+							"host": [
+								"{{storage.k8s.io-v1-host}}"
+							],
+							"path": [
+								"storageclasses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-host}}/version",
+					"host": [
+						"{{api-host}}"
+					],
+					"path": [
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-host}}/api",
+					"host": [
+						"{{api-host}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
