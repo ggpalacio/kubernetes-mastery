@@ -87,7 +87,13 @@ The **kubectl** CLI is composed by a command following by the Kubernetes resourc
 kubectl <command> <resource>
 ```
 
-**Resource types**
+**API Resources**
+
+There is a command in **kubectl** to list all available resources in the running Kubernetes distribution:
+
+```
+kubectl api-resources
+```
 
 | name                      | shortname | apiversion            | namespaced | kind                     |
 |---------------------------|-----------|-----------------------|------------|--------------------------|
@@ -112,6 +118,21 @@ kubectl <command> <resource>
 | ingresses                 | ing       | networking.k8s.io/v1  | true       | Ingress                  |
 | storageclasses            | sc        | storage.k8s.io/v1     | false      | StorageClass             |
 
+To view the definition of a specific resource type you can use the following command:
+```
+kubectl explain <type>
+```
+
+It is possible to view the definifition of a field in a resource:
+```
+kubectl explain <type>.<field>
+```
+
+Or view all resource's field definitions recursivily:
+```
+kubectl explain <type> --recursive
+```
+
 ### API
 
 To create a proxy in a localhost port to access the Kubernetes API:
@@ -128,7 +149,7 @@ or **/api**
 curl --location 'http://localhost:8080/api'
 ```
 
-**Resource endpoints**
+**API endpoints**
 
 | name                      | endpoint                                      | kind                          |
 |---------------------------|-----------------------------------------------|-------------------------------|
