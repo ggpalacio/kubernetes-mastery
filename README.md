@@ -89,12 +89,6 @@ kubectl <command> <resource>
 
 **API Resources**
 
-There is a command in **kubectl** to list all available resources in the running Kubernetes distribution:
-
-```
-kubectl api-resources
-```
-
 | name                      | shortname | apiversion            | namespaced | kind                     |
 |---------------------------|-----------|-----------------------|------------|--------------------------|
 | configmaps                | cm        | v1                    | true       | ConfigMap                |
@@ -118,21 +112,6 @@ kubectl api-resources
 | ingresses                 | ing       | networking.k8s.io/v1  | true       | Ingress                  |
 | storageclasses            | sc        | storage.k8s.io/v1     | false      | StorageClass             |
 
-To view the definition of a specific resource type you can use the following command:
-```
-kubectl explain <type>
-```
-
-It is possible to view the definifition of a field in a resource:
-```
-kubectl explain <type>.<field>
-```
-
-Or view all resource's field definitions recursivily:
-```
-kubectl explain <type> --recursive
-```
-
 ### API
 
 To create a proxy in a localhost port to access the Kubernetes API:
@@ -149,7 +128,7 @@ or **/api**
 curl --location 'http://localhost:8080/api'
 ```
 
-**API endpoints**
+**API Endpoints**
 
 | name                      | endpoint                                      | kind                          |
 |---------------------------|-----------------------------------------------|-------------------------------|
@@ -176,6 +155,31 @@ curl --location 'http://localhost:8080/api'
 
 
 You can access all these endpoints using Postman [collection](./postman/kubernetes.postman_collection.json) running in this [environament](./postman/kubernetes.postman_environment.json).
+
+### api-resources
+
+
+To list all available resources in the running Kubernetes distribution:
+```
+kubectl api-resources
+```
+
+### explain
+
+To view the definition of a specific resource type you can use the following command:
+```
+kubectl explain <type>
+```
+
+It is possible to view the definifition of a field in a resource:
+```
+kubectl explain <type>.<field>
+```
+
+Or view all resource's field definitions recursivily:
+```
+kubectl explain <type> --recursive
+```
 
 ### describe
 
